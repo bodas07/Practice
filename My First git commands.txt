@@ -1,0 +1,121 @@
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ ls
+README.md  Test
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git add test
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Test
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git commit -m "first commit" Test
+error: pathspec 'Test' did not match any file(s) known to git
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ cd/git/Practice/
+bash: cd/git/Practice/: No such file or directory
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ ls
+README.md  Test.txt
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git add test.txt
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git commit -m "first commit" Test.txt
+error: pathspec 'Test.txt' did not match any file(s) known to git
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ ls
+README.md  Test.txt
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ cd Test.txt
+bash: cd: Test.txt: Not a directory
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ cat Test.txt
+My first git
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git add Test.txt
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git commit -m "first commit" Test.txt
+[master b6aeeed] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test.txt
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': bodas07
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 141.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/bodas07/Practice.git
+   f4f25dc..b6aeeed  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git add Test.txt
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git commit -m "Second commit" Test.txt
+[master 3233e21] Second commit
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 295 bytes | 147.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/bodas07/Practice.git
+   b6aeeed..3233e21  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+
+bosuresh@USHYDBOSURE3 MINGW64 /c/git/Practice (master)
+$
